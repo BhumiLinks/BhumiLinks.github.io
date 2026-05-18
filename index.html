@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bhumilinks — commerce and credit rails for the Indian economy. We source inputs for India's MSMEs and provide the working capital that keeps procurement moving." />
+  <meta name="theme-color" content="#F1ECE2" />
+  <title>Bhumilinks — Commerce rails. Credit engine.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="icon" type="image/png" href="assets/favicon_io/favicon-32x32.png" />
+</head>
+<body>
+
+  <!-- Grain overlay for warmth -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="nav__inner container">
+      <a href="#top" class="logo" aria-label="Bhumilinks home">
+        <img src="assets/logo.png" class="logo__mark" alt="Bhumilinks" />
+        <span class="logo__word">Bhumilinks</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#approach">Approach</a>
+        <a href="#how">How we work</a>
+        <a href="#credit">Lending</a>
+        <a href="#geography">Where we work</a>
+        <a href="#beliefs">Beliefs</a>
+      </nav>
+
+      <a href="#contact" class="nav__cta">Get in touch
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <span class="eyebrow reveal">
+            <span class="eyebrow__dot"></span>
+            Commerce and credit rails for the Indian economy
+          </span>
+
+          <h1 class="hero__title reveal">
+            <span class="line">Source inputs.</span>
+            <span class="line">Fund the order.</span>
+            <span class="line"><em>Repeat at scale.</em></span>
+          </h1>
+
+          <p class="hero__sub reveal">
+            We operate the procurement layer for India's MSMEs — and put working capital inside the deal, so the businesses that build this economy don't have to pause for a bank.
+          </p>
+
+          <div class="hero__cta reveal">
+            <a href="#approach" class="btn btn--primary">
+              See how it works
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" aria-hidden="true">
+          <!-- Custom animated SVG: transactions converging into a credit signal -->
+          <svg viewBox="0 0 480 480" class="hero-svg">
+            <defs>
+              <linearGradient id="signalGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#9D4F2D" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#2A3F35" stop-opacity="0.9"/>
+              </linearGradient>
+              <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#9D4F2D" stop-opacity="0.18"/>
+                <stop offset="100%" stop-color="#9D4F2D" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <!-- ambient glow behind core -->
+            <circle cx="240" cy="240" r="180" fill="url(#coreGlow)"/>
+
+            <!-- concentric rings -->
+            <circle cx="240" cy="240" r="60" fill="none" stroke="#181816" stroke-width="0.6" stroke-opacity="0.25"/>
+            <circle cx="240" cy="240" r="120" fill="none" stroke="#181816" stroke-width="0.6" stroke-opacity="0.18" stroke-dasharray="2 4"/>
+            <circle cx="240" cy="240" r="180" fill="none" stroke="#181816" stroke-width="0.6" stroke-opacity="0.12" stroke-dasharray="1 5"/>
+
+            <!-- transaction nodes scattered around the perimeter -->
+            <g class="hero-nodes">
+              <circle cx="80" cy="120" r="4" class="hero-node n1"/>
+              <circle cx="400" cy="100" r="3" class="hero-node n2"/>
+              <circle cx="420" cy="280" r="4" class="hero-node n3"/>
+              <circle cx="360" cy="400" r="3" class="hero-node n4"/>
+              <circle cx="120" cy="380" r="4" class="hero-node n5"/>
+              <circle cx="60"  cy="240" r="3" class="hero-node n6"/>
+              <circle cx="240" cy="60"  r="3" class="hero-node n7"/>
+              <circle cx="200" cy="430" r="3" class="hero-node n8"/>
+            </g>
+
+            <!-- flowing lines from each node into core -->
+            <g class="hero-lines" stroke="url(#signalGrad)" stroke-width="1" fill="none" stroke-linecap="round">
+              <path d="M80 120 Q 160 180 240 240" class="flow-line l1"/>
+              <path d="M400 100 Q 320 170 240 240" class="flow-line l2"/>
+              <path d="M420 280 Q 330 260 240 240" class="flow-line l3"/>
+              <path d="M360 400 Q 300 320 240 240" class="flow-line l4"/>
+              <path d="M120 380 Q 180 310 240 240" class="flow-line l5"/>
+              <path d="M60 240  Q 150 240 240 240" class="flow-line l6"/>
+              <path d="M240 60  Q 240 150 240 240" class="flow-line l7"/>
+              <path d="M200 430 Q 220 335 240 240" class="flow-line l8"/>
+            </g>
+
+            <!-- traveling pulses -->
+            <g class="hero-pulses">
+              <circle r="2.5" fill="#9D4F2D" class="pulse p1"><animateMotion dur="3.6s" repeatCount="indefinite" rotate="auto" path="M80 120 Q 160 180 240 240"/></circle>
+              <circle r="2.5" fill="#9D4F2D" class="pulse p2"><animateMotion dur="4.2s" begin="0.5s" repeatCount="indefinite" path="M400 100 Q 320 170 240 240"/></circle>
+              <circle r="2.5" fill="#2A3F35" class="pulse p3"><animateMotion dur="3.9s" begin="1.0s" repeatCount="indefinite" path="M420 280 Q 330 260 240 240"/></circle>
+              <circle r="2.5" fill="#9D4F2D" class="pulse p4"><animateMotion dur="4.4s" begin="0.2s" repeatCount="indefinite" path="M360 400 Q 300 320 240 240"/></circle>
+              <circle r="2.5" fill="#2A3F35" class="pulse p5"><animateMotion dur="3.5s" begin="1.4s" repeatCount="indefinite" path="M120 380 Q 180 310 240 240"/></circle>
+              <circle r="2.5" fill="#9D4F2D" class="pulse p6"><animateMotion dur="4.0s" begin="0.8s" repeatCount="indefinite" path="M60 240 Q 150 240 240 240"/></circle>
+              <circle r="2.5" fill="#2A3F35" class="pulse p7"><animateMotion dur="3.8s" begin="1.6s" repeatCount="indefinite" path="M240 60 Q 240 150 240 240"/></circle>
+              <circle r="2.5" fill="#9D4F2D" class="pulse p8"><animateMotion dur="4.5s" begin="0.3s" repeatCount="indefinite" path="M200 430 Q 220 335 240 240"/></circle>
+            </g>
+
+            <!-- core -->
+            <circle cx="240" cy="240" r="22" fill="#181816"/>
+            <circle cx="240" cy="240" r="22" fill="none" stroke="#9D4F2D" stroke-width="1" class="core-ring"/>
+            <text x="240" y="244" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#F1ECE2" letter-spacing="1">SIGNAL</text>
+
+            <!-- corner labels -->
+            <g font-family="JetBrains Mono, monospace" font-size="8" fill="#5C5751" letter-spacing="1">
+              <text x="20" y="30">PROCUREMENT</text>
+              <text x="380" y="30">FULFILLMENT</text>
+              <text x="20" y="465">REPAYMENT</text>
+              <text x="350" y="465">UNDERWRITING</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="hero__scroll-cue" aria-hidden="true">
+        <span>Scroll</span>
+        <svg viewBox="0 0 12 24"><path d="M6 2v18M2 16l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="container"><hr class="rule" /></div>
+
+    <!-- 01 APPROACH (the conditions) -->
+    <section id="approach" class="section section--conditions">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__num">01</span>
+          <span class="section__label">The conditions we are built for</span>
+        </div>
+
+        <h2 class="section__title">
+          A small manufacturer in Ludhiana, a sugar buyer in Jammu, a horticulture aggregator in Shimla — they all run their business against the same three structural frictions.
+        </h2>
+
+        <div class="conditions-grid">
+          <article class="condition reveal">
+            <div class="condition__num">i.</div>
+            <h3 class="condition__title">Markets without mirrors</h3>
+            <p class="condition__body">Input prices are negotiated in silos. Buyers overpay because they can't see the supply side. Sellers undersell because they can't reach the demand side. Every transaction is a one-off without memory.</p>
+            <svg class="condition__icon" viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="40" r="36" fill="none" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.3"/>
+              <path d="M22 40h36M40 22v36" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.4"/>
+              <circle cx="28" cy="32" r="3" fill="currentColor" opacity="0.7"/>
+              <circle cx="54" cy="46" r="3" fill="currentColor" opacity="0.4"/>
+              <circle cx="34" cy="56" r="2.5" fill="currentColor" opacity="0.5"/>
+            </svg>
+          </article>
+
+          <article class="condition reveal" style="--reveal-delay:120ms;">
+            <div class="condition__num">ii.</div>
+            <h3 class="condition__title">Logistics without leverage</h3>
+            <p class="condition__body">Without volume aggregation, MSMEs orchestrate transit on spot rates from carriers they barely know. There's no SLA. No insurance. No accountability when a load arrives short or late.</p>
+            <svg class="condition__icon" viewBox="0 0 80 80" aria-hidden="true">
+              <path d="M10 50h12l4-12h22l4 12h12" fill="none" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.5"/>
+              <circle cx="22" cy="56" r="4" fill="none" stroke="currentColor" stroke-width="0.8"/>
+              <circle cx="58" cy="56" r="4" fill="none" stroke="currentColor" stroke-width="0.8"/>
+              <path d="M14 30 l 4 -2 M30 30 l4 -2 M46 30 l4 -2 M62 30 l4 -2" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.4"/>
+            </svg>
+          </article>
+
+          <article class="condition reveal" style="--reveal-delay:240ms;">
+            <div class="condition__num">iii.</div>
+            <h3 class="condition__title">Businesses without signal</h3>
+            <p class="condition__body">A bank cannot underwrite what it cannot see. With no verified record of what an MSME procures, fulfills, and pays, formal credit stays out of reach — and the gap gets filled by lenders charging 24–60%.</p>
+            <svg class="condition__icon" viewBox="0 0 80 80" aria-hidden="true">
+              <path d="M8 60 L 22 50 L 32 56 L 44 38 L 56 44 L 72 22" fill="none" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.4" stroke-dasharray="2 3"/>
+              <circle cx="22" cy="50" r="2" fill="currentColor" opacity="0.6"/>
+              <circle cx="32" cy="56" r="2" fill="currentColor" opacity="0.6"/>
+              <circle cx="44" cy="38" r="2" fill="currentColor" opacity="0.6"/>
+              <circle cx="56" cy="44" r="2" fill="currentColor" opacity="0.6"/>
+              <path d="M8 70h64" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.3"/>
+            </svg>
+          </article>
+        </div>
+
+        <p class="conditions-footnote">
+          Each problem produces the next. Without procurement data there's no credit signal; without credit there's no procurement scale; without scale there's no logistics leverage. We've spent the last several years pulling that loop apart from the inside.
+        </p>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="container"><hr class="rule" /></div>
+
+    <!-- 02 HOW WE WORK -->
+    <section id="how" class="section section--how">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__num">02</span>
+          <span class="section__label">How we work</span>
+        </div>
+
+        <h2 class="section__title">
+          Procurement, fulfillment, and capital — under one operating relationship.
+        </h2>
+
+        <p class="section__lede">
+          A manufacturer tells us what they need. We do the rest of the work — and the financing rides inside the transaction, not on a separate application form.
+        </p>
+
+        <!-- Custom animated flow diagram -->
+        <div class="flow reveal-once">
+          <svg class="flow__svg" viewBox="0 0 1100 360" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M0 0 L 10 5 L 0 10 z" fill="#181816"/>
+              </marker>
+            </defs>
+
+            <!-- connecting line -->
+            <path d="M90 180 H 1010" stroke="#181816" stroke-width="1" stroke-opacity="0.2" stroke-dasharray="3 4" class="flow__track"/>
+            <path d="M90 180 H 1010" stroke="#9D4F2D" stroke-width="1.4" stroke-linecap="round" class="flow__progress" pathLength="100"/>
+
+            <!-- 5 nodes -->
+            <g class="flow__node" data-step="1" transform="translate(90,180)">
+              <circle r="36" fill="#F1ECE2" stroke="#181816" stroke-width="1"/>
+              <circle r="3" cx="0" cy="0" fill="#181816"/>
+              <text y="-58" text-anchor="middle" class="flow__num">01</text>
+              <text y="62" text-anchor="middle" class="flow__title">Specification</text>
+              <text y="80" text-anchor="middle" class="flow__caption">Grade. Volume. Timeline.</text>
+            </g>
+            <g class="flow__node" data-step="2" transform="translate(320,180)">
+              <circle r="36" fill="#F1ECE2" stroke="#181816" stroke-width="1"/>
+              <path d="M-8 -2 L -2 4 L 8 -6" stroke="#181816" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <text y="-58" text-anchor="middle" class="flow__num">02</text>
+              <text y="62" text-anchor="middle" class="flow__title">Sourcing</text>
+              <text y="80" text-anchor="middle" class="flow__caption">Demand met to verified supply.</text>
+            </g>
+            <g class="flow__node" data-step="3" transform="translate(550,180)">
+              <circle r="36" fill="#F1ECE2" stroke="#181816" stroke-width="1"/>
+              <circle r="6" fill="none" stroke="#181816" stroke-width="1.2"/>
+              <path d="M4 4 L 10 10" stroke="#181816" stroke-width="1.2" stroke-linecap="round"/>
+              <text y="-58" text-anchor="middle" class="flow__num">03</text>
+              <text y="62" text-anchor="middle" class="flow__title">Verification</text>
+              <text y="80" text-anchor="middle" class="flow__caption">Graded at origin, before dispatch.</text>
+            </g>
+            <g class="flow__node" data-step="4" transform="translate(780,180)">
+              <circle r="36" fill="#F1ECE2" stroke="#181816" stroke-width="1"/>
+              <path d="M-10 2 L -4 -4 L 4 0 L 10 -6" stroke="#181816" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="-4" cy="-4" r="1.4" fill="#181816"/>
+              <circle cx="4" cy="0" r="1.4" fill="#181816"/>
+              <text y="-58" text-anchor="middle" class="flow__num">04</text>
+              <text y="62" text-anchor="middle" class="flow__title">Logistics</text>
+              <text y="80" text-anchor="middle" class="flow__caption">Trusted carriers. Defined SLAs.</text>
+            </g>
+            <g class="flow__node flow__node--accent" data-step="5" transform="translate(1010,180)">
+              <circle r="36" fill="#181816"/>
+              <path d="M-8 -4 h 16 v 8 h -16 z M-8 0 h16" stroke="#F1ECE2" stroke-width="1.2" fill="none"/>
+              <text y="-58" text-anchor="middle" class="flow__num flow__num--accent">05</text>
+              <text y="62" text-anchor="middle" class="flow__title">Capital</text>
+              <text y="80" text-anchor="middle" class="flow__caption">Working capital, embedded.</text>
+            </g>
+          </svg>
+        </div>
+
+        <div class="how-callouts">
+          <div class="how-callout reveal">
+            <span class="how-callout__label">One relationship</span>
+            <p>The buyer talks to one team — the same team that prices, verifies, ships, and finances the order.</p>
+          </div>
+          <div class="how-callout reveal" style="--reveal-delay:120ms;">
+            <span class="how-callout__label">One operating record</span>
+            <p>Every transaction is captured at every stage. That record becomes the underwriting input for the next order.</p>
+          </div>
+          <div class="how-callout reveal" style="--reveal-delay:240ms;">
+            <span class="how-callout__label">One accountable layer</span>
+            <p>If a load arrives short, late, or off-spec, the platform — not the buyer — owns the resolution.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="container"><hr class="rule" /></div>
+
+    <!-- 03 CREDIT INFRASTRUCTURE (fintech-forward) -->
+    <section id="credit" class="section section--credit">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__num">03</span>
+          <span class="section__label">Lending</span>
+        </div>
+
+        <div class="credit-grid">
+          <div class="credit-copy">
+            <h2 class="section__title section__title--credit">
+              The credit signal lives <em>inside</em> the transaction.
+            </h2>
+
+            <p class="credit-lede">
+              Most lenders put the compliance burden on the borrower — document collection, statements, months of waiting. We automate the process end to end. The underwriting runs in the background. By the time a buyer needs capital, the decision is already forming.
+            </p>
+
+            <ul class="credit-points">
+              <li class="reveal">
+                <span class="credit-point__label">Continuous, not point-in-time</span>
+                <p>An order specified, sourced, fulfilled, and paid is not just a transaction — it's an observation about the business. Hundreds of those, stitched together, form a credit signal that no application form can produce.</p>
+              </li>
+              <li class="reveal" style="--reveal-delay:100ms;">
+                <span class="credit-point__label">Built for co-lending, by design</span>
+                <p>Our underwriting was designed to plug into bank and NBFC balance sheets through co-lending — so capital scales without our balance sheet becoming the constraint.</p>
+              </li>
+              <li class="reveal" style="--reveal-delay:200ms;">
+                <span class="credit-point__label">Risk-priced by commodity, geography, counterparty</span>
+                <p>Wheat in Punjab, sugar in J&amp;K, and pharma inputs in Himachal each carry different risk shapes. We model them separately and price accordingly.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="credit-visual reveal-once">
+            <!-- Custom diagram: timeline of transactions → continuous risk model -->
+            <svg viewBox="0 0 480 540" class="credit-svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="riskLine" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%"  stop-color="#9D4F2D" stop-opacity="0.9"/>
+                  <stop offset="100%" stop-color="#2A3F35" stop-opacity="0.9"/>
+                </linearGradient>
+                <linearGradient id="bandFill" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%"  stop-color="#9D4F2D" stop-opacity="0.10"/>
+                  <stop offset="100%" stop-color="#9D4F2D" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+
+              <!-- column labels -->
+              <text x="40" y="36" font-family="JetBrains Mono, monospace" font-size="10" fill="#5C5751" letter-spacing="1.5">TRANSACTIONS</text>
+              <text x="40" y="226" font-family="JetBrains Mono, monospace" font-size="10" fill="#5C5751" letter-spacing="1.5">RISK MODEL</text>
+              <text x="40" y="416" font-family="JetBrains Mono, monospace" font-size="10" fill="#5C5751" letter-spacing="1.5">CAPITAL DEPLOYED</text>
+
+              <!-- top: transaction tick marks (timeline) -->
+              <g transform="translate(40,70)">
+                <line x1="0" y1="40" x2="400" y2="40" stroke="#181816" stroke-opacity="0.2" stroke-width="1"/>
+                <g class="credit-ticks">
+                  <rect x="10"  y="22" width="3" height="36" fill="#181816" class="tick t1"/>
+                  <rect x="40"  y="14" width="3" height="52" fill="#181816" class="tick t2"/>
+                  <rect x="70"  y="26" width="3" height="28" fill="#181816" class="tick t3"/>
+                  <rect x="100" y="10" width="3" height="60" fill="#181816" class="tick t4"/>
+                  <rect x="130" y="20" width="3" height="40" fill="#181816" class="tick t5"/>
+                  <rect x="160" y="6"  width="3" height="68" fill="#181816" class="tick t6"/>
+                  <rect x="190" y="18" width="3" height="44" fill="#181816" class="tick t7"/>
+                  <rect x="220" y="12" width="3" height="56" fill="#181816" class="tick t8"/>
+                  <rect x="250" y="22" width="3" height="36" fill="#181816" class="tick t9"/>
+                  <rect x="280" y="8"  width="3" height="64" fill="#181816" class="tick t10"/>
+                  <rect x="310" y="16" width="3" height="48" fill="#181816" class="tick t11"/>
+                  <rect x="340" y="4"  width="3" height="72" fill="#181816" class="tick t12"/>
+                  <rect x="370" y="14" width="3" height="52" fill="#181816" class="tick t13"/>
+                </g>
+                <text x="0" y="92" font-family="JetBrains Mono, monospace" font-size="9" fill="#5C5751">WK 01</text>
+                <text x="370" y="92" font-family="JetBrains Mono, monospace" font-size="9" fill="#5C5751" text-anchor="end">WK 52</text>
+              </g>
+
+              <!-- middle: continuous risk curve with shaded band -->
+              <g transform="translate(40,250)">
+                <path d="M0 80 C 60 60, 100 100, 160 70 S 260 40, 320 50 S 400 30, 400 30 L 400 120 L 0 120 Z" fill="url(#bandFill)"/>
+                <path d="M0 80 C 60 60, 100 100, 160 70 S 260 40, 320 50 S 400 30, 400 30" fill="none" stroke="url(#riskLine)" stroke-width="2" stroke-linecap="round" class="risk-curve"/>
+                <line x1="0" y1="120" x2="400" y2="120" stroke="#181816" stroke-opacity="0.2" stroke-width="1"/>
+              </g>
+
+              <!-- bottom: capital deployed (bar response) -->
+              <g transform="translate(40,440)">
+                <line x1="0" y1="60" x2="400" y2="60" stroke="#181816" stroke-opacity="0.2" stroke-width="1"/>
+                <g class="credit-bars">
+                  <rect x="0"   y="46" width="22" height="14" fill="#2A3F35" class="bar b1"/>
+                  <rect x="34"  y="40" width="22" height="20" fill="#2A3F35" class="bar b2"/>
+                  <rect x="68"  y="32" width="22" height="28" fill="#2A3F35" class="bar b3"/>
+                  <rect x="102" y="26" width="22" height="34" fill="#2A3F35" class="bar b4"/>
+                  <rect x="136" y="20" width="22" height="40" fill="#2A3F35" class="bar b5"/>
+                  <rect x="170" y="16" width="22" height="44" fill="#2A3F35" class="bar b6"/>
+                  <rect x="204" y="12" width="22" height="48" fill="#2A3F35" class="bar b7"/>
+                  <rect x="238" y="10" width="22" height="50" fill="#2A3F35" class="bar b8"/>
+                  <rect x="272" y="8"  width="22" height="52" fill="#2A3F35" class="bar b9"/>
+                  <rect x="306" y="6"  width="22" height="54" fill="#2A3F35" class="bar b10"/>
+                  <rect x="340" y="4"  width="22" height="56" fill="#2A3F35" class="bar b11"/>
+                  <rect x="374" y="2"  width="22" height="58" fill="#2A3F35" class="bar b12"/>
+                </g>
+              </g>
+
+              <!-- vertical thread connecting layers -->
+              <g stroke="#181816" stroke-width="0.6" stroke-opacity="0.3" stroke-dasharray="2 4">
+                <line x1="240" y1="160" x2="240" y2="240"/>
+                <line x1="240" y1="380" x2="240" y2="430"/>
+              </g>
+            </svg>
+            <p class="credit-visual__caption">Verified activity → continuously updated risk model → capital deployed at the moment a buyer needs it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="container"><hr class="rule" /></div>
+
+    <!-- 04 GEOGRAPHY -->
+    <section id="geography" class="section section--geo">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__num">04</span>
+          <span class="section__label">Where we work</span>
+        </div>
+
+        <div class="geo-grid">
+          <div class="geo-copy">
+            <h2 class="section__title">
+              The corridor that unlocks the country.
+            </h2>
+            <p class="geo-lede">
+              Northwest India is our strategic starting point. The corridor is dense with industrial activity, uncontested by integrated commerce-and-credit platforms, and provides an ideal pan-India jump-off point. The relationships and credit data we build here are the rails our national platform runs on.
+            </p>
+            <p class="geo-quiet">
+              Operational base: Mohali, Punjab.
+            </p>
+          </div>
+
+                                        <div class="geo-map reveal-once">
+            <img src="assets/india_map.png" alt="India operating corridor and expansion plan map" class="geo-img"/>
+          </div>
+              <defs>
+                <pattern id="geoGrid2" width="24" height="24" patternUnits="userSpaceOnUse">
+                  <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#181816" stroke-width="0.4" stroke-opacity="0.07"/>
+                </pattern>
+                <!-- Soft glow emanating from Mohali outward across India -->
+                <radialGradient id="reachGrad" cx="173" cy="154" r="450" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%"  stop-color="#9D4F2D" stop-opacity="0.14"/>
+                  <stop offset="32%" stop-color="#9D4F2D" stop-opacity="0.06"/>
+                  <stop offset="70%" stop-color="#9D4F2D" stop-opacity="0.02"/>
+                  <stop offset="100%" stop-color="#9D4F2D" stop-opacity="0"/>
+                </radialGradient>
+                <!-- Clip expansion effects to India shape -->
+                <clipPath id="indiaClip2">
+                  <path d="M 124 30 Q 156 20 189 30 Q 202 40 214 50 L 222 109 Q 210 124 196 138 Q 215 158 231 177 Q 267 208 302 217 Q 339 222 376 227 Q 380 222 537 177 Q 515 220 504 246 Q 494 266 492 286 Q 480 302 467 317 Q 456 326 448 335 L 374 335 Q 362 348 351 360 Q 336 370 321 380 Q 297 395 272 409 Q 258 426 249 443 Q 242 458 240 472 Q 237 482 236 492 Q 231 519 228 545 L 187 598 Q 182 594 177 590 L 161 561 Q 142 507 122 453 Q 113 420 104 386 Q 100 367 99 348 L 53 335 L 24 293 Q 41 287 59 282 Q 79 279 99 276 Q 77 252 55 227 Q 52 207 52 187 Q 67 163 82 138 Q 99 113 117 89 Z"/>
+                </clipPath>
+              </defs>
+
+              <!-- Grid backdrop -->
+              <rect width="560" height="630" fill="url(#geoGrid2)"/>
+
+              <!-- India main outline — computed from actual geographic coordinates -->
+              <path d="M 124 30 Q 156 20 189 30 Q 202 40 214 50 L 222 109 Q 210 124 196 138 Q 215 158 231 177 Q 267 208 302 217 Q 339 222 376 227 Q 380 222 537 177 Q 515 220 504 246 Q 494 266 492 286 Q 480 302 467 317 Q 456 326 448 335 L 374 335 Q 362 348 351 360 Q 336 370 321 380 Q 297 395 272 409 Q 258 426 249 443 Q 242 458 240 472 Q 237 482 236 492 Q 231 519 228 545 L 187 598 Q 182 594 177 590 L 161 561 Q 142 507 122 453 Q 113 420 104 386 Q 100 367 99 348 L 53 335 L 24 293 Q 41 287 59 282 Q 79 279 99 276 Q 77 252 55 227 Q 52 207 52 187 Q 67 163 82 138 Q 99 113 117 89 Z"
+                    fill="#EAE3D5" stroke="#181816" stroke-width="0.9" stroke-opacity="0.35"/>
+
+              <!-- Expansion glow — clipped to India, radiates from Mohali outward -->
+              <rect width="560" height="630" fill="url(#reachGrad)" clip-path="url(#indiaClip2)"/>
+
+              <!-- NW corridor highlighted — J&K + HP + Punjab + Haryana -->
+              <path d="M 124 30 Q 156 20 189 30 Q 202 40 214 50 L 222 109 Q 210 124 196 138 Q 215 155 232 172 L 232 210 L 155 210 L 112 187 L 82 138 Q 99 113 117 89 Z"
+                    fill="#9D4F2D" fill-opacity="0.78" stroke="#181816" stroke-width="0.8"/>
+
+              <!-- State labels within the corridor -->
+              <!--
+              <text x="162" y="82"  text-anchor="middle" font-family="Fraunces, serif" font-size="14" fill="#FAF6EE" font-weight="500">J&amp;K</text>
+              <text x="210" y="130" text-anchor="middle" font-family="Fraunces, serif" font-size="9"  fill="#1a1916"  font-weight="500">HP</text>
+              <text x="152" y="175" text-anchor="middle" font-family="Fraunces, serif" font-size="13" fill="#FAF6EE" font-weight="500">Punjab</text>
+              <text x="208" y="200" text-anchor="middle" font-family="Fraunces, serif" font-size="9"  fill="#1a1916"  font-weight="500">Haryana</text>
+              -->
+
+              <!-- Mohali HQ marker -->
+              <g transform="translate(173, 154)">
+                <circle r="13" fill="none" stroke="#181816" stroke-width="0.7" stroke-dasharray="2 3" class="hq-ring"/>
+                <circle r="5"  fill="#FAF6EE" stroke="#181816" stroke-width="1.4"/>
+                <circle r="2"  fill="#181816"/>
+              </g>
+
+              <!-- Mohali leader line — curves up and out above J&K to clean label area -->
+              <path d="M 173 147 Q 204 88 244 36" fill="none" stroke="#181816" stroke-width="0.5" stroke-opacity="0.55"/>
+              <!--
+              <text x="248" y="34" font-family="JetBrains Mono, monospace" font-size="8" fill="#181816" letter-spacing="1">MOHALI · HQ</text>
+              -->
+              <!-- Region annotation — in open space to the right of the map -->
+              <!--
+              <text x="390" y="136" font-family="Fraunces, serif" font-size="13" font-style="italic" fill="#181816">Northwest India</text>
+              -->
+              <line x1="388" y1="143" x2="435" y2="143" stroke="#181816" stroke-width="0.6"/>
+              <!--
+              <text x="388" y="155" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#5C5751" letter-spacing="1.2">OPERATING CORRIDOR</text>
+              -->
+
+              <!-- Expansion routes — very subtle dashed arcs, clipped to India, no arrowheads -->
+              <g clip-path="url(#indiaClip2)">
+                <!-- SW toward Mumbai -->
+                <path d="M 173 154 Q 122 252 104 386" fill="none" stroke="#9D4F2D" stroke-width="0.8" stroke-opacity="0.22" stroke-dasharray="4 6"/>
+                <!-- S toward South India -->
+                <path d="M 173 154 Q 200 360 187 560" fill="none" stroke="#9D4F2D" stroke-width="0.8" stroke-opacity="0.18" stroke-dasharray="3 7"/>
+                <!-- SE toward East India -->
+                <path d="M 173 154 Q 278 220 374 325" fill="none" stroke="#9D4F2D" stroke-width="0.8" stroke-opacity="0.20" stroke-dasharray="4 6"/>
+              </g>
+
+              <!-- Compass -->
+              <g transform="translate(518, 56)">
+                <text font-family="JetBrains Mono, monospace" font-size="9" fill="#5C5751" letter-spacing="1.5" text-anchor="middle" y="-14">N</text>
+                <line x1="0" y1="-10" x2="0" y2="-2" stroke="#181816" stroke-width="0.8"/>
+                <circle r="1.4" fill="#181816"/>
+              </g>
+
+              <!-- Figure caption 
+              <text x="28" y="616" font-family="JetBrains Mono, monospace" font-size="8" fill="#8A8377" letter-spacing="1.5">FIG. 04 · OPERATING CORRIDOR</text>
+             .-->
+            </svg>
+          </div>
+        </div>
+
+        <ul class="geo-states">
+          <li class="reveal">
+            <span class="geo-states__name">Punjab</span>
+            <p>Operational base. India's food bowl, also a dense industrial MSME belt — the corridor radiates from here.</p>
+          </li>
+          <li class="reveal" style="--reveal-delay:90ms;">
+            <span class="geo-states__name">Haryana</span>
+            <p>The manufacturing heartland of the region. Active relationships across agri-processing, with adjacent categories ready to expand into.</p>
+          </li>
+          <li class="reveal" style="--reveal-delay:180ms;">
+            <span class="geo-states__name">Himachal Pradesh</span>
+            <p>Pharma manufacturing and high-value horticulture. A natural step into specialised input procurement.</p>
+          </li>
+          <li class="reveal" style="--reveal-delay:270ms;">
+            <span class="geo-states__name">Jammu &amp; Kashmir</span>
+            <p>Sugar and agri buyers who place a premium on reliability — and reorder consistently when they get it.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="container"><hr class="rule" /></div>
+
+    <!-- 05 BELIEFS -->
+    <section id="beliefs" class="section section--beliefs">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__num">05</span>
+          <span class="section__label">What we believe</span>
+        </div>
+
+        <ol class="beliefs">
+          <li class="belief reveal">
+            <span class="belief__num">i.</span>
+            <p>An MSME deserves to be underwritten on the work it does — not the paperwork it has.</p>
+          </li>
+          <li class="belief reveal" style="--reveal-delay:120ms;">
+            <span class="belief__num">ii.</span>
+            <p>A business that got what it ordered — on time, financed cleanly — will reorder. One that didn't is just waiting for a better price. Reliability is the only loyalty programme that compounds.</p>
+          </li>
+          <li class="belief reveal" style="--reveal-delay:240ms;">
+            <span class="belief__num">iii.</span>
+            <p>Geography matters. The best version of this company is built from inside the corridor it serves, not parachuted into it.</p>
+          </li>
+          <li class="belief reveal" style="--reveal-delay:360ms;">
+            <span class="belief__num">iv.</span>
+            <p>Software follows the relationship. The relationship does not follow the software.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-card__inner">
+            <p class="contact-card__eyebrow">
+              <span class="eyebrow__dot"></span>
+              Get in touch
+            </p>
+            <h2 class="contact-card__title">
+              Build with us, buy from us, or back the work — <em>we'd like to hear from you.</em>
+            </h2>
+            <p class="contact-card__sub">
+              Whether you're a manufacturer looking for inputs and capital, a lender exploring co-lending, or someone who wants to understand the work — write to us.
+            </p>
+
+            <div class="contact-card__actions">
+              <a href="mailto:sidharth@bhumilinks.com" class="btn btn--primary btn--lg">
+                sidharth@bhumilinks.com
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/sidharthgsharma" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">Founder on LinkedIn</a>
+            </div>
+
+            <dl class="contact-meta contact-meta--single">
+              <div>
+                <dt>Currently serving</dt>
+                <dd>Punjab, Haryana, Himachal Pradesh, J&amp;K</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="logo.png" class="logo__mark" alt="Bhumilinks" />
+        <div>
+          <p class="footer__name">Bhumilinks Commerce</p>
+          <p class="footer__tag">B2B commerce and embedded lending for India's MSMEs.</p>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <a href="#approach">Approach</a>
+        <a href="#how">How we work</a>
+        <a href="#credit">Lending</a>
+        <a href="#geography">Geography</a>
+        <a href="#beliefs">Beliefs</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <p class="footer__copy">© <span id="year">2026</span> Bhumilinks Commerce Pvt. Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
