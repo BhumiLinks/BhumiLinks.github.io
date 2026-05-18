@@ -74,4 +74,15 @@
     { rootMargin: '0px 0px -10% 0px', threshold: 0.3 }
   );
   document.querySelectorAll('.flow, .credit-visual').forEach(el => containerObserver.observe(el));
+
+  // 5) Collapsible condition body text
+  document.querySelectorAll('.condition__toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      const target = document.getElementById(btn.getAttribute('aria-controls'));
+      btn.setAttribute('aria-expanded', String(!expanded));
+      btn.querySelector('.condition__toggle-label').textContent = expanded ? 'Read more' : 'Close';
+      target.hidden = expanded;
+    });
+  });
 })();

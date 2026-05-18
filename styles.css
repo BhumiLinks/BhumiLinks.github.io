@@ -450,11 +450,38 @@ em { font-style: italic; }
   letter-spacing: -0.015em;
   font-variation-settings: "opsz" 32;
 }
+.condition__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+  margin-bottom: 10px;
+  transition: color 0.2s;
+}
+.condition__toggle:hover { color: var(--accent); }
+.condition__toggle svg {
+  width: 10px; height: 10px;
+  transition: transform 0.25s var(--ease);
+}
+.condition__toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
 .condition__body {
   font-size: 15px;
   color: var(--muted);
-  margin: 0 0 28px;
+  margin: 0 0 16px;
   line-height: 1.62;
+  animation: bodyFadeIn 0.28s ease;
+}
+@keyframes bodyFadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: none; }
 }
 .condition__icon {
   width: 70px;
